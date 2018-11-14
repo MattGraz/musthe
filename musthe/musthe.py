@@ -132,6 +132,8 @@ class Note:
 
         self.number = self.letter.number() + self.octave * 12 + \
             Note.accidental_value(self.accidental)
+        self.note = note
+
 
     def __add__(self, other):
         if isinstance(other, Interval):
